@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/santhosh-stitch/demo-project.git/static/css/main.073c9b0a.css",
+    "main.js": "/santhosh-stitch/demo-project.git/static/js/main.7c90fdbb.js",
+    "static/js/787.be73f74f.chunk.js": "/santhosh-stitch/demo-project.git/static/js/787.be73f74f.chunk.js",
+    "index.html": "/santhosh-stitch/demo-project.git/index.html",
+    "main.073c9b0a.css.map": "/santhosh-stitch/demo-project.git/static/css/main.073c9b0a.css.map",
+    "main.7c90fdbb.js.map": "/santhosh-stitch/demo-project.git/static/js/main.7c90fdbb.js.map",
+    "787.be73f74f.chunk.js.map": "/santhosh-stitch/demo-project.git/static/js/787.be73f74f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7c90fdbb.js"
+  ]
+}
