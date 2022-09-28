@@ -3,9 +3,14 @@ import SignInForm from "../../components/forms/SignInForm";
 import AuthLayout from "../../components/layouts/AuthLayout";
 
 const SignIn = ({loading}) => {
+
+  const login = async (data) =>{
+    
+  }
     return (
        <AuthLayout heading="Welcome! Please sign in.">
-         <SignInForm />
+         <SignInForm 
+         getValue={(val) => login(val)}/>
       </AuthLayout>
     )
 }

@@ -1,13 +1,11 @@
-export const setToken = (data) => {
-    return {
-        type: 'SET_TOKEN',
-        payload: data,
-    };
-}
+import { REMOVE_TOKEN, SET_TOKEN } from "../types/actionType";
 
-export const removeToken = () => {
-    return {
-        type: 'REMOVE_TOKEN',
-        payload: null,
-    };
-}
+export const setToken = (data) => ({
+    type: SET_TOKEN,
+    payload: data,
+});
+
+export const removeToken = () => ({
+    type: REMOVE_TOKEN,
+    payload: null,
+});

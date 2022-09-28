@@ -1,14 +1,15 @@
 import './App.css';
 // import SingIn from './pages/auth/SignIn';
 // import { connect } from "react-redux";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";  
-// import publicRoutes from './routes/publicRoutes';
+import { BrowserRouter, Route, Routes } from "react-router-dom";  
+import publicRoutes from './routes/publicRoutes';
 import { SIGN_IN } from './utils/urls';
+import SignIn from './pages/auth/SignIn';
 
 const App = (props) => {
   const {auth, sandbox, loading} = props;
 
-  const publicRoutes = (route, index) => {
+  const publicRoute = (route, index) => {
     if (auth) {
       return null;
     }
@@ -25,9 +26,10 @@ const App = (props) => {
     <div className="App">
      <BrowserRouter>
        <Routes>
-          <Navigate exact path="/" to={auth ? "" : SIGN_IN}/>
-          {publicRoutes.map((route, index) => publicRoutes(route, index))}
-          {!auth && <Navigate path="*" to={SIGN_IN} />}
+          {/* <Route exact path="/" to={auth ? "" : SIGN_IN}/> */}
+          <Route exact path="/" comp={SIGN_IN}/>
+          {publicRoutes.map((route, index) => publicRoute(route, index))}
+          {!auth && <Route path="*" comp={SIGN_IN} />}
        </Routes>
      </BrowserRouter>
     </div>
