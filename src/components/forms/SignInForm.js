@@ -4,6 +4,7 @@ import { makeStyles, Box, Typography, InputAdornment } from "@material-ui/core";
 import {ReactComponent as ProfileIcon} from "../../assets/icons/ProfileIcon.svg";
 import {ReactComponent as PasswordIcon} from "../../assets/icons/PasswordIcon.svg";
 import {Formik} from "formik";
+// import { useHistory } from "react-router";
 import TextField from "../core/TextField";
 import Button from "../core/Button";
 import PasswordField from "../core/PasswordField";
@@ -26,9 +27,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
   
-  const SignInForm = ({ getValue }) => {
+  const SignInForm = ({ getValue,backendError,loading }) => {
     const classes = useStyles();
-    
+    // const history = useHistory();
+
     return (
         <Box
            display="flex"
@@ -103,7 +105,9 @@ const useStyles = makeStyles((theme) => ({
                     variant="outlined"
                 />
                 <Typography align="center" className={classes.forgotPasswordText}>
-                    <span className={classes.linkText}>
+                    <span className={classes.linkText} 
+                    // onClick={() => history.push("/forgot-password")}
+                    >
                        Forgot Password?
                     </span>
                 </Typography>

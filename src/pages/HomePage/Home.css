@@ -1,0 +1,40 @@
+*{
+    box-sizing: 10px;
+}
+
+body{
+    margin: 0;
+}
+.nav {
+    background-color: rgb(184, 167, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 6rem;
+}
+.nav a{
+    color: inherit;
+    text-decoration: none;
+}
+/*.nav span.active{
+    background-color: rgb(203, 203, 230);
+    bottom: 2rem;
+    font:300
+}*/
+
+.nav span.hovever{
+    background-color: rgb(241, 141, 141);
+    font: 1em sans-serif;
+}
+
+.title {
+    font-size: 1rem;
+    font-style:inherit;
+}
+.nav ul{
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 5rem;
+}

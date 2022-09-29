@@ -29,7 +29,11 @@ const App = (props) => {
      <BrowserRouter>
        <Routes>
           {/* <Route exact path="/" to={auth ? "" : SIGN_IN}/> */}
-          <Route exact path="/" element={ !auth ? <Navigate to={SIGN_IN} replace/> : null} />
+          <Route exact path="/" element={ !auth ? <Navigate to={SIGN_IN} replace/> 
+          : 
+          // <Navigate to={}/>
+          null
+          } />
           {/* <Route exact path="/" element= /> */}
           {/* {auth ? navigate(SIGN_IN) : navigate(SIGN_IN)} */}
           {publicRoutes.map((route, index) => publicRoute(route, index))}

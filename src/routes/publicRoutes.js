@@ -1,6 +1,5 @@
-// import { lazy } from "react";
-
 import SignIn from "../pages/auth/SignIn";
+import MultiFactorAuthentication from "../pages/auth/MultiFactorAuthentication"
 
 const publicRoutes = [
     {
@@ -10,8 +9,13 @@ const publicRoutes = [
     },
     {
         path: "/mfa-setup",
-        component: ,
+        // component:  ,
         exact: true,
     },
+    {
+        path: "/mfa",
+        component: <MultiFactorAuthentication/>,
+        exact: true,
+      },
 ];
 export default publicRoutes;

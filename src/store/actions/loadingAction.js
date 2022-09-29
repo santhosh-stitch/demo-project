@@ -1,4 +1,4 @@
-import { SET_LOADING, REMOVE_lOADING } from "../types/actionType";
+import { SET_LOADING, REMOVE_LOADING } from "../types/actionType";
 
 export const setLoading = () => ({
     type: SET_LOADING,
@@ -6,6 +6,6 @@ export const setLoading = () => ({
 });
 
 export const removeLoading = () => ({
-    type: REMOVE_lOADING,
+    type: REMOVE_LOADING,
     payload: null
 })
